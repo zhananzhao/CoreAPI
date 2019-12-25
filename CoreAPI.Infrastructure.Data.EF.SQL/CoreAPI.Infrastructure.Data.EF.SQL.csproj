@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CoreAPI.Domains\CoreAPI.Domains.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Util.Core">
+      <HintPath>..\dll\Util.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Util.Datas">
+      <HintPath>..\dll\Util.Datas.dll</HintPath>
+    </Reference>
+    <Reference Include="Util.Datas.Ef">
+      <HintPath>..\dll\Util.Datas.Ef.dll</HintPath>
+    </Reference>
+    <Reference Include="Util.Domains">
+      <HintPath>..\dll\Util.Domains.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

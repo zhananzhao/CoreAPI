@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Util.Core">
+      <HintPath>..\dll\Util.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Util.Domains">
+      <HintPath>..\dll\Util.Domains.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

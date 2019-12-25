@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="4.9.2" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="4.4.0" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Redis" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CoreAPI.Core\CoreAPI.Core.csproj" />
+    <ProjectReference Include="..\CoreAPI.Infrastructure.Data.EF.SQL\CoreAPI.Infrastructure.Data.EF.SQL.csproj" />
+    <ProjectReference Include="..\CoreAPI.Services\CoreAPI.Services.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Util.ApplicationServices">
+      <HintPath>..\dll\Util.ApplicationServices.dll</HintPath>
+    </Reference>
+    <Reference Include="Util.Core">
+      <HintPath>..\dll\Util.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Util.Datas.Ef">
+      <HintPath>..\dll\Util.Datas.Ef.dll</HintPath>
+    </Reference>
+    <Reference Include="Util.DI.Autofac">
+      <HintPath>..\dll\Util.DI.Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="Util.Domains">
+      <HintPath>..\dll\Util.Domains.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

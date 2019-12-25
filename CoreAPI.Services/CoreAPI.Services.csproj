@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="4.9.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CoreAPI.Domains\CoreAPI.Domains.csproj" />
+    <ProjectReference Include="..\CoreAPI.Infrastructure.Data.EF.SQL\CoreAPI.Infrastructure.Data.EF.SQL.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.Extensions.Caching.Redis">
+      <HintPath>C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.extensions.caching.redis\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Caching.Redis.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>C:\Users\Administrator\.nuget\packages\newtonsoft.json\11.0.2\lib\netstandard2.0\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Util.ApplicationServices">
+      <HintPath>..\dll\Util.ApplicationServices.dll</HintPath>
+    </Reference>
+    <Reference Include="Util.Core">
+      <HintPath>..\dll\Util.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Util.Datas">
+      <HintPath>..\dll\Util.Datas.dll</HintPath>
+    </Reference>
+    <Reference Include="Util.Datas.Ef">
+      <HintPath>..\dll\Util.Datas.Ef.dll</HintPath>
+    </Reference>
+    <Reference Include="Util.Datas.Sql">
+      <HintPath>..\dll\Util.Datas.Sql.dll</HintPath>
+    </Reference>
+    <Reference Include="Util.DI.Autofac">
+      <HintPath>..\dll\Util.DI.Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="Util.Domains">
+      <HintPath>..\dll\Util.Domains.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
